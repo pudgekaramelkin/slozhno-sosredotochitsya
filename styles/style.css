@@ -1,5 +1,108 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-inline: var(--padding-main);
+  font-family: var(--main-font, sans-serif);
+  font-size: 1.125rem;
+  color: var(--text-color);
+}
+
+.header {
+  display: grid;
+}
+
+.header__span_rec{
+  display: none;
+  position: absolute;
+  top: 11px;
+  right: 39px;
+  color: var(--text-color);
+  line-height: 139%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header__span_rec::after {
+  content: "";
+  position: absolute;
+  top: var(--padding-main);
+  right: 0;
+  margin: -2px -20px 0 0;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--rec-color);
+  background-color: var(--rec-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  top: var(--padding-main);
+  right: var(--padding-main);
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--text-color);
+  border-inline-end: 1px solid var(--text-color);
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  bottom: var(--padding-main);
+  left: var(--padding-main);
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-end: 1px solid var(--text-color);
+  border-inline-start: 1px solid var(--text-color);
+}
+
+.header__theme-menu {
+  padding-block-start: 4.69rem;
+}
+
+.header__theme-menu-list {
+  align-self: center;
+  display: grid;
+  gap: 0.8125rem;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button  {
+  padding-block: 0px;
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+  padding-block: 0px;
+  padding-inline: 0.8125rem;
+  outline: 1px solid var(--outline-color);
+}
+
+.header__title {
+  margin-block: 4.17rem 3.44rem;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  color: var(--title-color);
+  font-weight: 700;
+  text-shadow: 4px 4px 0px var(--accent-color);
+  text-wrap: wrap;
+}
+
+.header__descritption {
+  line-height: 130%;
+  font-weight: bold;
+  background-color: var(--accent-color);
 }
