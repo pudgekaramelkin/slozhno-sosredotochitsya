@@ -50,8 +50,8 @@
   right: 0;
   inline-size: 25px;
   block-size: 25px;
-  border-block-start: 1px solid var(--text-color);
-  border-inline-end: 1px solid var(--text-color);
+  border-block-start: 1px solid var(--border-color);
+  border-inline-end: 1px solid var(--border-color);
 }
 
 .decorated-zone::before {
@@ -61,8 +61,8 @@
   left: 0;
   inline-size: 25px;
   block-size: 25px;
-  border-block-end: 1px solid var(--text-color);
-  border-inline-start: 1px solid var(--text-color);
+  border-block-end: 1px solid var(--border-color);
+  border-inline-start: 1px solid var(--border-color);
 }
 
 .header__theme-menu {
@@ -81,6 +81,7 @@
 }
 
 .header__theme-menu-button {
+  color: var(--title-color);
   padding-block: 0px;
   background-color: transparent;
   border: none;
@@ -97,13 +98,14 @@
   margin-block: 4.17rem 3.44rem;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
-  color: var(--title-color);
+  color: var(--high-title-color);
   font-weight: 700;
   text-shadow: 4px 4px 0px var(--accent-color);
   text-wrap: wrap;
 }
 
 .header__descritption {
+  color: var(--subtitle-color);
   margin-block-end: 56px;
   background-color: var(--accent-color);
   font-weight: 700;
@@ -116,6 +118,7 @@
 }
 
 .main__section-title {
+  color: var(--title-color);
   margin-block-start: 50px;
   font-weight: 700;
   line-height: 130%;
@@ -128,6 +131,7 @@
 }
 
 .main__subsection-subtitle {
+  color: var(--subtitle-color);
   background-color: var(--accent-color);
   font-weight: 700;
   line-height: 130%;
@@ -144,6 +148,7 @@
 
 .main__subsection-subtitle-list {
   background-color: var(--accent-color);
+  color: var(--subtitle-color);
   line-height: 130%;
 }
 
@@ -176,7 +181,7 @@ h2.main__subsection-subtitle {
 
 .footer__title {
   padding: 286px 3px;
-  color: var(--title-color);
+  color: var(--high-title-color);
   font-weight: 700;
   line-height: 82.5%;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
