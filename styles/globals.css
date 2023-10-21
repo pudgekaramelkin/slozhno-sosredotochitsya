@@ -5,7 +5,7 @@
 }
 
 body {
-  block-size: 100%;
+  block-size: 100svh;
   min-inline-size: 375px;
   max-inline-size: 1440px;
   padding: 0;

@@ -1,4 +1,4 @@
-@media screen and (prefers-color-scheme: light) { 
+@media screen and (prefers-color-scheme: light) {
   :root {
     --main-font: 'IBM Plex mono';
     --text-color: #353430;
@@ -15,13 +15,13 @@
   }
 }
 
-@media screen and (prefers-color-scheme: dark) { 
+@media screen and (prefers-color-scheme: dark) {
   :root {
     --main-font: 'IBM Plex mono';
     --text-color: #F1B2CE;
     --high-title-color: #DB00FF;
     --title-color: #FF0070;
-    --subtitle-color: #000028; 
+    --subtitle-color: #000028;
     --bg-color: #000028;
     --accent-color: #FF0070;
     --outline-color: #FF0070;
