@@ -1,4 +1,4 @@
-.page.theme_dark {
+:root .page.theme_dark {
   --text-color: #F1B2CE;
   --high-title-color: #DB00FF;
   --title-color: #FF0070;
@@ -10,4 +10,19 @@
   --bg-image: url(../images/cover-image-dark.png);
   --padding-main: 0.625rem;
   --rec-color: var(--text-color);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #F1B2CE;
+    --high-title-color: #DB00FF;
+    --title-color: #FF0070;
+    --subtitle-color: #000028;
+    --bg-color: #000028;
+    --accent-color: #FF0070;
+    --outline-color: #FF0070;
+    --border-color: #FF0070;
+    --bg-image: url(../images/cover-image-dark.png);
+    --rec-color: var(--text-color);
+  }
 }
