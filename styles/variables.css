@@ -10,7 +10,7 @@
   --outline-color: #353430;
   --border-color: var(--text-color);
   --bg-image: url(../images/cover-image-light.png);
-  --rec-color: var(--text-color);
+  --rec-color: var(--bg-color);
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -24,6 +24,6 @@
     --outline-color: #FF0070;
     --border-color: #FF0070;
     --bg-image: url(../images/cover-image-dark.png);
-    --rec-color: var(--text-color);
+    --rec-color: var(--accent-color);
   }
 }
