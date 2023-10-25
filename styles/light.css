@@ -9,4 +9,5 @@
   --border-color: var(--text-color);
   --bg-image: url(../images/cover-image-light.png);
   --rec-color: var(--bg-color);
+  --outline-hover-color: rgba(50, 49, 45, 0.40);
 }

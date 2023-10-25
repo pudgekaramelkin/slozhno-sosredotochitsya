@@ -9,6 +9,7 @@
   --border-color: #FF0070;
   --bg-image: url(../images/cover-image-dark.png);
   --rec-color: var(--accent-color);
+  --outline-hover-color: rgba(255, 0, 112, 0.40);
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -23,5 +24,6 @@
     --border-color: #FF0070;
     --bg-image: url(../images/cover-image-dark.png);
     --rec-color: var(--accent-color);
+    --outline-hover-color: rgba(255, 0, 112, 0.40);
   }
 }
