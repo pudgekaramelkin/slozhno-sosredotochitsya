@@ -13,3 +13,9 @@
   --rec-color: var(--bg-color);
   --outline-hover-color: rgba(50, 49, 45, 0.40);
 }
+
+@media screen and (width >= 768px) {
+  :root {
+    --padding-main: 1.25rem;
+  }
+}
